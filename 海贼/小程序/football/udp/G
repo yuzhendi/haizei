@@ -1,0 +1,3 @@
+gcc client.c ../common/udp_client.c -o  client
+gcc client.c ../common/udp_server.c -o  server
+

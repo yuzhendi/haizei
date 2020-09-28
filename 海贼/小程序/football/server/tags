@@ -1,0 +1,82 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Ctrl	game.h	/^struct Ctrl {$/;"	s
+Football	game.h	/^WINDOW *Football, *Message, *Help, *Score, *Write;$/;"	v
+Help	game.h	/^WINDOW *Football, *Message, *Help, *Score, *Write;$/;"	v
+LogData	game.h	/^struct LogData {$/;"	s
+MAX	game.h	10;"	d
+MAX_TASK	server2.c	29;"	d	file:
+MAX_THREAD	server2.c	30;"	d	file:
+Map	game.h	/^struct Map {$/;"	s
+Message	game.h	/^WINDOW *Football, *Message, *Help, *Score, *Write;$/;"	v
+Point	game.h	/^struct Point {$/;"	s
+Score	game.h	/^WINDOW *Football, *Message, *Help, *Score, *Write;$/;"	v
+TaskQueue	server2.c	/^} TaskQueue;$/;"	t	typeref:struct:__anon1	file:
+TaskQueueInit	server2.c	/^void TaskQueueInit (TaskQueue *queue, int sum) {$/;"	f
+TaskQueuePop	server2.c	/^int TaskQueuePop(TaskQueue *queue) {$/;"	f
+TaskQueuePush	server2.c	/^void TaskQueuePush(TaskQueue *queue, int fd) {$/;"	f
+TransMsg	game.h	/^struct TransMsg {       \/\/传输的信息$/;"	s
+User	game.h	/^struct User {$/;"	s
+Write	game.h	/^WINDOW *Football, *Message, *Help, *Score, *Write;$/;"	v
+_GAME_H	game.h	8;"	d
+addr	game.h	/^    struct sockaddr_in addr;$/;"	m	struct:User	typeref:struct:User::sockaddr_in
+bepollfd	server.c	/^int repollfd, bepollfd;$/;"	v
+bteam	luo.c	/^struct User *bteam;$/;"	v	typeref:struct:User
+bteam	server.c	/^struct User *bteam;$/;"	v	typeref:struct:User
+bteam	server2.c	/^struct User *bteam;$/;"	v	typeref:struct:User
+carry	game.h	/^    int carry;      \/\/带球$/;"	m	struct:Ctrl
+ch_char	server2.c	/^char ch_char(char c) {$/;"	f
+cond	server2.c	/^    pthread_cond_t cond;$/;"	m	struct:__anon1	file:
+conf	luo.c	/^char *conf = ".\/server.conf";$/;"	v
+conf	server.c	/^char *conf = ".\/server.conf";$/;"	v
+conf	server2.c	/^char *conf = ".\/server.conf";$/;"	v
+court	game.h	/^struct Map court;$/;"	v	typeref:struct:Map
+court	luo.c	/^struct Map court;$/;"	v	typeref:struct:Map
+create_newwin	game.h	/^WINDOW *create_newwin(int width, int heigth, int startx, int starty) {$/;"	f
+ctrl	game.h	/^    struct Ctrl ctrl;$/;"	m	struct:TransMsg	typeref:struct:TransMsg::Ctrl
+data_port	server.c	/^int data_port;$/;"	v
+data_port	server2.c	/^int data_port;$/;"	v
+destroy_win	game.h	/^void destroy_win(WINDOW *win) {$/;"	f
+dirx	game.h	/^    int dirx;$/;"	m	struct:TransMsg
+diry	game.h	/^    int diry;      \/\/两个方向$/;"	m	struct:TransMsg
+do_echo	server2.c	/^void do_echo(int fd ) {$/;"	f
+draw	game.h	/^void *draw(void *arg) {$/;"	f
+fd	server2.c	/^    int *fd;$/;"	m	struct:__anon1	file:
+flag	game.h	/^    int flag;       \/\/判断是否在线$/;"	m	struct:User
+gate_heigth	game.h	/^    int gate_heigth;        \/\/球门的高度$/;"	m	struct:Map
+gate_width	game.h	/^    int gate_width;         \/\/球门的宽度$/;"	m	struct:Map
+gotoxy	game.h	/^void gotoxy(int x, int y) {$/;"	f
+gotoxy_putc	game.h	/^void gotoxy_putc(int x, int y, int c) {$/;"	f
+gotoxy_puts	game.h	/^void gotoxy_puts(int x, int y, char *s) {$/;"	f
+head	server2.c	/^    int head;$/;"	m	struct:__anon1	file:
+heigth	game.h	/^    int heigth;     \/\/高$/;"	m	struct:Map
+initfootball	game.h	/^void initfootball() {$/;"	f
+kick	game.h	/^    int kick;       \/\/踢球$/;"	m	struct:Ctrl
+loc	game.h	/^    struct Point loc;$/;"	m	struct:User	typeref:struct:User::Point
+main	luo.c	/^int main(int argc, char **argv) {$/;"	f
+main	server.c	/^int main(int argc, char **argv) { \/\/ 主从反应堆$/;"	f
+main	server2.c	/^int main(int argc, char **argv) {$/;"	f
+mutex	server2.c	/^    pthread_mutex_t mutex;$/;"	m	struct:__anon1	file:
+name	game.h	/^    char name[20];$/;"	m	struct:LogData
+name	game.h	/^    char name[20];$/;"	m	struct:User
+port	server.c	/^int port = 0;$/;"	v
+port	server2.c	/^int port = 0;$/;"	v
+repollfd	server.c	/^int repollfd, bepollfd;$/;"	v
+rteam	luo.c	/^struct User *rteam;$/;"	v	typeref:struct:User
+rteam	server.c	/^struct User *rteam;$/;"	v	typeref:struct:User
+rteam	server2.c	/^struct User *rteam;$/;"	v	typeref:struct:User
+start	game.h	/^    struct Point start;     \/\/开始的点$/;"	m	struct:Map	typeref:struct:Map::Point
+sum	server2.c	/^    int sum;$/;"	m	struct:__anon1	file:
+tail	server2.c	/^    int tail;$/;"	m	struct:__anon1	file:
+team	game.h	/^    int team; \/\/ 0 :red,  1 : blue$/;"	m	struct:LogData
+team	game.h	/^    int team;$/;"	m	struct:User
+thread_run	server2.c	/^void *thread_run(void *arg) {$/;"	f
+w_gotoxy_putc	game.h	/^void w_gotoxy_putc(WINDOW *win, int x, int y, int c) {$/;"	f
+w_gotoxy_puts	game.h	/^void w_gotoxy_puts(WINDOW *win, int x, int y, char *s) {$/;"	f
+width	game.h	/^    int width;      \/\/地图的宽$/;"	m	struct:Map
+x	game.h	/^    int x;$/;"	m	struct:Point
+y	game.h	/^    int y;$/;"	m	struct:Point

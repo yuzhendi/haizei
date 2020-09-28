@@ -1,0 +1,48 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MAX_TASK	server2.c	29;"	d	file:
+MAX_THREAD	server2.c	30;"	d	file:
+TaskQueue	server2.c	/^} TaskQueue;$/;"	t	typeref:struct:__anon1	file:
+TaskQueueInit	server2.c	/^void TaskQueueInit (TaskQueue *queue, int sum) {$/;"	f
+TaskQueuePop	server2.c	/^int TaskQueuePop(TaskQueue *queue) {$/;"	f
+TaskQueuePush	server2.c	/^void TaskQueuePush(TaskQueue *queue, int fd) {$/;"	f
+bepollfd	server.c	/^int repollfd, bepollfd;$/;"	v
+bepollfd	server3.c	/^int repollfd, bepollfd;$/;"	v
+bteam	luo.c	/^struct User *bteam;$/;"	v	typeref:struct:User
+bteam	server.c	/^struct User *bteam;$/;"	v	typeref:struct:User
+bteam	server2.c	/^struct User *bteam;$/;"	v	typeref:struct:User
+bteam	server3.c	/^struct User *bteam;$/;"	v	typeref:struct:User
+ch_char	server2.c	/^char ch_char(char c) {$/;"	f
+cond	server2.c	/^    pthread_cond_t cond;$/;"	m	struct:__anon1	file:
+conf	luo.c	/^char *conf = ".\/server.conf";$/;"	v
+conf	server.c	/^char *conf = ".\/server.conf";$/;"	v
+conf	server2.c	/^char *conf = ".\/server.conf";$/;"	v
+conf	server3.c	/^char *conf = ".\/server.conf";$/;"	v
+court	luo.c	/^struct Map court;$/;"	v	typeref:struct:Map
+data_port	server.c	/^int data_port;$/;"	v
+data_port	server2.c	/^int data_port;$/;"	v
+data_port	server3.c	/^int data_port;$/;"	v
+do_echo	server2.c	/^void do_echo(int fd ) {$/;"	f
+fd	server2.c	/^    int *fd;$/;"	m	struct:__anon1	file:
+head	server2.c	/^    int head;$/;"	m	struct:__anon1	file:
+main	luo.c	/^int main(int argc, char **argv) {$/;"	f
+main	server.c	/^int main(int argc, char **argv) {$/;"	f
+main	server2.c	/^int main(int argc, char **argv) {$/;"	f
+main	server3.c	/^int main(int argc, char **argv) { \/\/ 主从反应堆$/;"	f
+mutex	server2.c	/^    pthread_mutex_t mutex;$/;"	m	struct:__anon1	file:
+port	server.c	/^int port = 0;$/;"	v
+port	server2.c	/^int port = 0;$/;"	v
+port	server3.c	/^int port = 0;$/;"	v
+repollfd	server.c	/^int repollfd, bepollfd;$/;"	v
+repollfd	server3.c	/^int repollfd, bepollfd;$/;"	v
+rteam	luo.c	/^struct User *rteam;$/;"	v	typeref:struct:User
+rteam	server.c	/^struct User *rteam;$/;"	v	typeref:struct:User
+rteam	server2.c	/^struct User *rteam;$/;"	v	typeref:struct:User
+rteam	server3.c	/^struct User *rteam;$/;"	v	typeref:struct:User
+sum	server2.c	/^    int sum;$/;"	m	struct:__anon1	file:
+tail	server2.c	/^    int tail;$/;"	m	struct:__anon1	file:
+thread_run	server2.c	/^void *thread_run(void *arg) {$/;"	f
