@@ -11,6 +11,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
+#include <string.h>
 void Stderr(int argc, char **argv) {
     if (argc != 2) {
         fprintf(stderr, "Usage : %s port\n", argv[0]);
@@ -50,12 +51,30 @@ int main(int argc, char **argv) {
             close(sockfd);
             continue;
         }
-        char name[20] = {0};
-        if (recv(sockfd, name, sizeof(name), 0) <= 0) {
-            close(sockfd);
+
+        pid_t pid;
+        if ((pid = fork()) < 0) { // 创建子进程
+            perror("fork");
             continue;
         }
-        printf("%s\n", name);
+
+        if (pid == 0) {
+            // 子进程
+           while(1) {
+            char name[20] = {0};
+            if (recv(sockfd, name, sizeof(name), 0) < 0) {
+                perror("recv");
+                close(sockfd);
+            }
+            if (strcmp(name, "exit") == 0)
+                exit(0);
+            else {
+                printf("%s\n", name);
+               }
+            }
+
+
+        }
     }
 
     return 0;
