@@ -4,7 +4,7 @@
 	> Mail: 1316215578@qq.com
 	> Created Time: 2020年07月01日 星期三 10时21分41秒
  ************************************************************************/
-
+// bellman 方法：解决负权边， O(n * m)
 #include <iostream>
 #include <algorithm>
 #include <cstring>
